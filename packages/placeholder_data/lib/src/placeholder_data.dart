@@ -19,4 +19,7 @@ abstract class PlaceholderDataAPI {
 
   /// Gets all the tasks starting from page [startIndex].
   Future<List<Task>> fetchTasks([int startIndex = 0]);
+
+  /// Gets the latest readings
+  Future<List<Reading>> fetchReadings([int startIndex = 0]);
 }

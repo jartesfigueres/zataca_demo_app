@@ -31,6 +31,13 @@ class ThemeConfiguration {
           borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
         ),
       ),
+      dataTableTheme: original.dataTableTheme.copyWith(
+        headingTextStyle: const TextStyle(color: secondaryColor),
+        headingRowColor: const MaterialStatePropertyAll(primaryColor),
+        dataRowColor: const MaterialStatePropertyAll(
+          Color.fromRGBO(243, 243, 243, 1),
+        ),
+      ),
     );
   }
 }

@@ -37,6 +37,7 @@ dependencies:
   stream_transform: ^2.0.0
   flutter_bloc: ^8.1.1
   font_awesome_flutter: ^10.2.1
+  intl: ^0.17.0
 
   placeholder_data:
     path: packages/placeholder_data

@@ -138,4 +138,56 @@ class JSONPlaceholderAPI extends PlaceholderDataAPI {
       );
     }).toList();
   }
+
+  @override
+  Future<List<Reading>> fetchReadings([int startIndex = 0]) {
+    // Generate fake data
+    return Future.delayed(
+      const Duration(seconds: 1),
+      () => <Reading>[
+        Reading(
+          id: 1,
+          type: 'Consumos',
+          date: DateTime(2020, 10, 23, 13, 21),
+          active: true,
+        ),
+        Reading(
+          id: 2,
+          type: 'Consumos',
+          date: DateTime(2020, 10, 19, 10, 20),
+          active: true,
+        ),
+        Reading(
+          id: 1,
+          type: 'Potencias',
+          date: DateTime(2020, 2, 5, 20, 35),
+          active: false,
+        ),
+        Reading(
+          id: 1,
+          type: 'Datos',
+          date: DateTime(2020, 10, 23, 23, 40),
+          active: true,
+        ),
+        Reading(
+          id: 1,
+          type: 'Consumos',
+          date: DateTime(2020, 10, 23, 8, 23),
+          active: false,
+        ),
+        Reading(
+          id: 1,
+          type: 'Potencias',
+          date: DateTime(2020, 10, 23, 8, 23),
+          active: true,
+        ),
+        Reading(
+          id: 1,
+          type: 'Potencias',
+          date: DateTime(2020, 10, 23, 8, 23),
+          active: true,
+        ),
+      ],
+    );
+  }
 }

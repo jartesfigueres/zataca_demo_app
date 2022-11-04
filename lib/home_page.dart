@@ -5,9 +5,9 @@ import 'package:zataca_demo_app/common/widgets/action_button.dart';
 import 'package:zataca_demo_app/common/widgets/expanded_image.dart';
 import 'package:zataca_demo_app/common/widgets/like_counter.dart';
 import 'package:zataca_demo_app/common/widgets/multitab_container.dart';
-import 'package:zataca_demo_app/common/widgets/table_container.dart';
 import 'package:zataca_demo_app/configuration/theme_configuration.dart';
 import 'package:zataca_demo_app/posts/view/posts_page.dart';
+import 'package:zataca_demo_app/readings/view/readings_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
@@ -59,15 +59,7 @@ class HomePage extends StatelessWidget {
                       'Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam.',
                     ],
                   ),
-                  const TableContainerWidget(
-                    title: 'Segunda parte',
-                    subtitle:
-                        'Aquí vamos a mostrar una tabla. Debes de intentar dejarlo lo mas parecido posible, al igual que hacerla dinámica.',
-                    options: [
-                      'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese.\nAlps. Situated 1,578 meters above sea level, it is one of the.\nLarger Alpine Lakes. A gondola ride from Kandersteg, followed by a.',
-                      'Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam.',
-                    ],
-                  ),
+                  const ReadingsPage(),
                   Row(
                     children: [
                       Expanded(
